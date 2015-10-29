@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Conversor</string>
+    <string name="valor">Valor</string>
+    <string name="gasolina">Preço Gasolina</string>
+    <string name="alcool">Preço Alcool</string>
+    <string name="km_litros">Km/L</string>
+    <string name="km">Km</string>
+    <string name="litros">Litros</string>
+    <string name="btn_limpar">Limpar</string>
+    <string name="btn_fechar">Fechar</string>
+    <string name="btn_calculo">Calcular</string>
+    <string name="label_economia">Economia (%)</string>
+    <string name="label_opcao">Melhor Opção</string>
+    <string name="label_dif">Diferença</string>
+</resources>

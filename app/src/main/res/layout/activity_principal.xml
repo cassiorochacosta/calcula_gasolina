@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".PrincipalActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/valor"
+        android:id="@+id/labelValor"
+        android:layout_alignBaseline="@+id/edtValor"
+        android:layout_alignBottom="@+id/edtValor"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edtValor"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/gasolina"
+        android:id="@+id/labelPrecoGasolina"
+        android:layout_alignBaseline="@+id/edtPrecoGasolina"
+        android:layout_alignBottom="@+id/edtPrecoGasolina"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edtPrecoGasolina"
+        android:layout_above="@+id/edtKmGasolina"
+        android:layout_alignStart="@+id/edtKmGasolina" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/km_litros"
+        android:id="@+id/labelKmGasolina"
+        android:layout_above="@+id/edtKmAlcool"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="102dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edtKmGasolina"
+        android:layout_alignTop="@+id/labelKmGasolina"
+        android:layout_alignStart="@+id/edtValor" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/alcool"
+        android:id="@+id/labelPrecoAlcool"
+        android:layout_alignTop="@+id/edtValorAlcool"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edtValorAlcool"
+        android:layout_marginBottom="108dp"
+        android:layout_above="@+id/btnLimpar"
+        android:layout_alignStart="@+id/edtKmAlcool" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/km_litros"
+        android:id="@+id/labelKmAlcool"
+        android:layout_below="@+id/labelPrecoAlcool"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="9"
+        android:id="@+id/edtKmAlcool"
+        android:layout_alignBottom="@+id/labelKmAlcool"
+        android:layout_alignStart="@+id/edtKmGasolina" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:id="@+id/btnCalculo"
+        android:layout_gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_alignTop="@+id/btnLimpar"
+        android:layout_toStartOf="@+id/edtValorAlcool" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_limpar"
+        android:id="@+id/btnLimpar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="39dp"
+        android:layout_marginEnd="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/edtValorAlcool" />
+</RelativeLayout>
